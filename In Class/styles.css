@@ -1,0 +1,102 @@
+main {
+     display: grid;
+    grid-template-columns: 25% 75%; 
+
+}
+.left-side {
+    background-color: lightgray;
+    padding: 3%;
+}
+.right-side {
+    padding: 3%;
+}
+.vis-small {
+    display: none;
+
+    @media screen and (max-width: 960px) {
+        display: block;
+        
+        background-color: blue;
+        color: white;
+    }
+}
+
+.vis-large {
+    display: none;
+
+    @media screen and (min-width: 961px) {
+        display: block;
+        background-color: tan;
+    }
+}
+
+.help {
+    height: 50px;
+    width: 50px;
+    color: white;
+    font-size: xx-large;
+    background-image: conic-gradient(red 0deg, red 90deg, blue 90deg, blue 180deg, yellow 180deg, yellow 270deg, green 270deg, green 360deg);
+    border-radius: 50%;
+    display: inline-block;
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+}
+
+    .nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 1%;
+    flex-direction: row;
+
+    display: flex;
+
+} 
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+li {
+    padding: 0 1%;
+}
+
+.navigation {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+.self-image {
+    background-color: red;
+    padding: 2px;
+    transition: width 2s, height 4s;
+    width: 75px;
+    height: 75px;
+    margin: 0 auto;
+}
+.self-image:hover{
+    width: 175px;
+    height: 175px;
+}
+@keyframes box {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+  
+  /* The element to apply the animation to */
+  .funny-box {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: box;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
