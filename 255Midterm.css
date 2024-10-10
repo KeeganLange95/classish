@@ -1,0 +1,105 @@
+
+body {
+    background-color: black;
+    color: white; 
+    padding-left: 3%;
+    --gray-color: darkgray;
+}
+
+
+.Box {
+    border-width: 2px;
+    border-color:  var(--gray-color);
+    border-style: solid;
+}
+p {
+    color: darkgray;
+}
+.Grid-Display {
+    display: grid;
+   grid-template-columns: repeat(3, 404px);
+   gap: 3%;
+}
+.innerBox {
+    border-width: 2px;
+    border-color:  var(--gray-color);
+    border-style: solid;
+    border-left-width: 0;
+    border-right-width: 0;
+    margin: 0;
+}
+/*.Box img {
+    margin: 0;
+    padding: 0;
+    padding-left: 0%;
+    display: block;
+}*/
+.littleBoxContainer {
+    display: grid;
+    padding-left: 3px;
+    grid-template-columns: repeat(2, 30%);
+    gap: 3%;
+}
+.littleBox {
+    border-width: 2px;
+    border-color:  var(--gray-color);
+    border-style: solid;
+}
+.addTopSpace {
+    padding-top: 5%;
+}
+.hotbar {
+    list-style: none;
+}
+.hotbarItem {
+    display: inline;
+}
+div .hotbarItem {
+    display: inline;
+    float: right;
+    padding-right: 4%;
+}
+img {
+    display: block;
+}
+.paragraph-Display {
+    max-width: 500px;
+}
+.email-Box {
+    border-width: 2px;
+    border-color:  var(--gray-color);
+    border-style: solid;
+    padding-left: 5%;
+}
+.displayLogo {
+    display: inline;
+}
+.mediaContainer {
+    display: grid;
+    padding-left: 3px;
+    grid-template-columns: repeat(2, 100px);
+    gap: 3%;
+}
+.leftSpacedInline {
+    display: inline;
+    padding-left: 15px ;
+}
+.footerContainer {
+    display: grid;
+    grid-template-columns: repeat(3,33%);
+}
+.NotPadded {
+    padding: 0;
+    margin: 0;
+}
+.Copyright {
+   text-align: center;
+}
+/*@media (max-width: 500px){
+    .Grid-Display {
+        display: grid;
+        grid-template-columns: repeat(2, 404px);
+        padding: 2%;
+        gap: 3%;
+    }
+} */
